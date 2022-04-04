@@ -1,7 +1,6 @@
 package handle
 
 import (
-	"fmt"
 	"github.com/google/uuid"
 	"math/rand"
 	"strconv"
@@ -41,6 +40,5 @@ func HandlerUrl(keyWord string, pvid string) (url string) {
 }
 
 func HandlerReferer() (referer string) {
-	fmt.Println(ha.JingdongReferer + ha.pvid)
 	return ha.JingdongReferer + ha.pvid
 }
