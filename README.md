@@ -5,7 +5,7 @@
 ## 1.运行方式
 
 ```
-go run ./main.go -kw gtx -proxy 127.0.0.1:1234
+go run ./main.go -kw gtx -proxy 127.0.0.1:7890
 kw为搜索的关键字
 proxy为代理(如果被反爬的话，走clash或者ssr的代理端口)
 ```
@@ -13,7 +13,7 @@ proxy为代理(如果被反爬的话，走clash或者ssr的代理端口)
 实例
 
 ```
->>go run ./main.go -kw gtx -proxy 127.0.0.1:1234
+>>go run ./main.go -kw gtx -proxy 127.0.0.1:7890
 设置代理为: 127.0.0.1:7890
 jQuery24400509([{"key":"gtx1650super"},{"key":"gtx1660super"},{"key":"gtx1060"},{"key":"gtx780"},{"key":"gtx750"},{"key":"gtx1650"},{"k
 ey":"gtx1660"},{"key":"gtx1660ti微星"},{"key":"gtx1660ti"},{"key":"gtx1050"},{"key":"gtx1060ti"},{"key":"gtx1060 6g显卡"},{"key":"gtx76
