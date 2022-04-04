@@ -7,7 +7,7 @@
 ```
 go run ./main.go -kw gtx -proxy 127.0.0.1:7890
 kw为搜索的关键字
-proxy为代理(如果被反爬的话，走clash或者ssr的代理端口)
+proxy为代理(如果被反爬的话，走clash或者ssr的代理端口，没有就不要设置)
 ```
 
 实例
