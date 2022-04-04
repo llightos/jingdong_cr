@@ -33,6 +33,7 @@ func main() {
 	//headerR := make(map[string][]string)
 	if *proxy != "null" {
 		fmt.Println("设置代理为:", *proxy)
+
 		transport := &http.Transport{Proxy: func(req *http.Request) (*url.URL, error) {
 			return url.Parse("http://" + *proxy)
 		}}
