@@ -1,6 +1,7 @@
 package handle
 
 import (
+	"fmt"
 	"github.com/google/uuid"
 	"math/rand"
 	"strconv"
@@ -18,7 +19,7 @@ var ha Handle
 
 func init() {
 	ha.JingdongUrl = "https://dd-search.jd.com/?terminal=pc&newjson=1&ver=2&zip=1&t=1649056874120&curr_url=search.jd.com/Search"
-	ha.JingdongReferer = "https://search.jd.com/Search?keyword=111&enc=utf-8&wq=111&pvid=0d4e126bb74c4618af636715c4a88933"
+	ha.JingdongReferer = "https://search.jd.com/Search?enc=utf-8&pvid="
 }
 
 func PVid() (id string) {
@@ -40,5 +41,6 @@ func HandlerUrl(keyWord string, pvid string) (url string) {
 }
 
 func HandlerReferer() (referer string) {
+	fmt.Println(ha.JingdongReferer + ha.pvid)
 	return ha.JingdongReferer + ha.pvid
 }
